@@ -64,7 +64,7 @@ h4 {
 }
 
 .extended {
-    flex: 2;
+    flex: 1;
 }
 
 .extended h4 {
@@ -180,12 +180,12 @@ justify-content: center;
 
    .containerGallery{
        display: flex;
-       flex-direction: column;
+       /* flex-direction: column; */
        justify-content: center;
    }
 
    .extended {
-    flex: 2;
+    flex: 30;
 }
 .extended .size_price {
     font-size:18px; 
