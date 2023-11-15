@@ -1,4 +1,39 @@
-.heading,  .btnContainer {
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+
+/* .heading,  .btnContainer {
 
     display: flex;
     justify-content: center;
@@ -15,7 +50,7 @@
     background-color:#FFC996;
 } */
 
-.main{
+/* .main{
 
     font-size:40px;
 }
@@ -41,9 +76,9 @@ h4 {
     color: #000000;
     opacity:0;
     /* display:none; */
-}
+/* } */
 
-.par {
+/* .par {
     position:absolute;
     top:100px;
     left: 20px;
@@ -51,9 +86,9 @@ h4 {
     color: #000000; 
     opacity:0;
     /* display:none;   */
-}
+/*}*/
 
-.size_price{
+/* .size_price{
     position:absolute;
     bottom: 20px;
     background-color: #fff;
@@ -61,8 +96,8 @@ h4 {
     opacity:0;
     left: 20px;
 
-}
-
+} */
+/* 
 .extended {
     flex: 1;
 }
@@ -102,7 +137,7 @@ h4 {
 .four {
 
  background-image: url(/img/angels4.jpg);   
-}
+}  */
 
 /* .five {
     background-image: url(https://cdn.glitch.com/53c7f80e-8344-41e2-a021-a6b3eb904f3e%2F643A1619-2.jpg?v=1625446464128); 
@@ -112,7 +147,7 @@ h4 {
 
     background-image:url(https://cdn.glitch.com/53c7f80e-8344-41e2-a021-a6b3eb904f3e%2F1_dglWyN7vN0Ir0fGjLdm15vNONgc%3D_135b2b_6988ab9b_orig-3.jpg?v=1625449836916) ;
 } */
-.containerGallery{
+/* .containerGallery{
     height:90vh;
 display: flex;
 justify-content: center;
@@ -143,11 +178,10 @@ justify-content: center;
     border-radius: 10px;
     min-height: 10px;
     height: auto;
-    min-width:
+    /* min-width: */
+ /* } */
 
- }
-
- .btn{
+ /* .btn{
     border: none;
     border-radius: 3px;
     height: 40px;
@@ -157,31 +191,33 @@ justify-content: center;
     font-family:  'Satisfy', cursive;
     font-size: 20px;
     margin-bottom: 30px;
- }
+ } */
 
- .btn:hover {
+ /* .btn:hover {
 
     background-color: #F4A460; 
     cursor:pointer; 
 
- }
- .emailContainer{
+ } */
+ /* .emailContainer{
 
     display: flex;
     justify-content: space-between;
- }
+ } */
 
- ::placeholder {
+ /* ::placeholder {
 
     font-family: 'Satisfy', cursive;
- }
+ }  */
 
- @media all and (max-width: 600px ){
+ /*--Multi-item Carousel For Bootstrap 5*/
+ 
+ /* @media all and (max-width: 600px ){
 
    .containerGallery{
        display: flex;
        /* flex-direction: column; */
-       justify-content: center;
+       /* justify-content: center;
    }
 
    .extended {
@@ -213,4 +249,4 @@ justify-content: center;
   text-align: center;
 }
 
-}
+} */ 
