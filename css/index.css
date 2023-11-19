@@ -79,4 +79,16 @@ Responsive Image gallery Style rules
   .image-item:hover .overlay {
     transform: scale(1);
   }
-  
+#submitForm {
+  border: 2px solid;
+}  
+
+ .third-of-width {
+  width: 35%;
+ } @media (max-width: 768px) {
+
+  .third-of-width{
+    width: 100%
+  }
+ 
+}
