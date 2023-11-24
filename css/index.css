@@ -50,6 +50,7 @@ Responsive Image gallery Style rules
     .image-gallery {
       flex-direction: row;
     }
+  
   }
   
   /* overlay styles */
@@ -91,4 +92,9 @@ Responsive Image gallery Style rules
     width: 100%
   }
  
+  #about{
+     display: flex; 
+     flex-direction: column;
+     justify-content: center;
+  }
 }
