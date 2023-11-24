@@ -97,4 +97,9 @@ Responsive Image gallery Style rules
      flex-direction: column;
      justify-content: center;
   }
+
+  #photoMe {
+    width:100%;
+    height: auto;
+  }
 }
