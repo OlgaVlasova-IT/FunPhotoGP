@@ -32,6 +32,11 @@ Responsive Image gallery Style rules
     flex-direction: column;
     gap: 10px;
   }
+ .photoIcon {
+                    width: 100%;
+                    height: 130px;
+                    object-fit: cover;
+ }
   
   .image-gallery .column {
     display: flex;
@@ -45,6 +50,9 @@ Responsive Image gallery Style rules
     height: 100%;
     object-fit: cover;
   }
+  #photoMe {
+    border-radius: 250px;
+  }
   
   @media only screen and (min-width: 768px) {
     .image-gallery {
@@ -56,6 +64,10 @@ Responsive Image gallery Style rules
   /* overlay styles */
   
   .image-item {
+    position: relative;
+    cursor: pointer;
+  }
+  .image-wrap {
     position: relative;
     cursor: pointer;
   }
@@ -77,8 +89,30 @@ Responsive Image gallery Style rules
   }
   
   /* hover */
+  .image-wrap:hover .overlay {
+    transform: scale(1);
+  }
   .image-item:hover .overlay {
     transform: scale(1);
+  }
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    /* display: none; */
+    background: url(/icons/2942376\ square\ 120px.jpg);
+    background-size: cover;
+    border-style: 2x solid #9B9592;
+    border-radius: 30px;
+   
+  }
+  .fillSVG {
+    fill: whitesmoke;
+    /* width: 60px;
+    height: 60px; */
+    /* display:inline-table; */
   }
 #submitForm {
   border: 2px solid;
@@ -91,7 +125,9 @@ Responsive Image gallery Style rules
   .third-of-width{
     width: 100%
   }
- 
+  .nodisplay {
+    display: none;
+  }
   #about{
      display: flex; 
      flex-direction: column;
@@ -102,4 +138,5 @@ Responsive Image gallery Style rules
     width:100%;
     height: auto;
   }
+
 }

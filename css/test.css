@@ -15,6 +15,19 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .cid-rygXSVeoSA .form-control, .cid-rygXSVeoSA .field-input {
+    padding: 1rem;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #767676;
+    color: #767676 !important;
+    transition: 0.4s;
+    font-size: 0.9rem;
+    box-shadow: none;
+    border-radius: 0px;
+    outline: none;
+}
   @media (min-width: 768px) {
     .carousel-item {
       margin-right: 0;
