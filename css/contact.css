@@ -1,0 +1,38 @@
+#photoMe {
+    /* border-radius: 250px; */
+    border-radius: 20em 20em 20em 20em;
+  }
+  .third-of-width {
+    width: 80%;
+   }
+
+   .image-item {
+    position: relative;
+    cursor: pointer;
+  }
+  .image-wrap {
+    position: relative;
+    cursor: pointer;
+  }
+  .photoIcon {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+   #submitForm {
+ border: 2px solid gray;
+ border-radius: 1em;
+   }
+
+   @media (max-width: 768px) {
+
+    .third-of-width{
+      width: 100%
+    }
+    #photoMe {
+      width:100%;
+      height: auto;
+      
+    }
+  
+  }
