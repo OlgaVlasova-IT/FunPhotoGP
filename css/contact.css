@@ -19,12 +19,22 @@
     height: 150px;
     object-fit: cover;
 }
+
+
    #submitForm {
  border: 2px solid gray;
  border-radius: 1em;
    }
 
    @media (max-width: 768px) {
+    .contactSection{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .nodisplay {
+        display: none;
+      }
 
     .third-of-width{
       width: 100%
