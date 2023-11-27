@@ -1,3 +1,5 @@
+$grey:  #E9E9E9;
+$dark-grey: #323B40;
 
 .container {
   padding: 2rem 0rem;
@@ -6,11 +8,9 @@
 h4{
   margin: 3rem 0rem 2rem;  
 }
-.brightness {
-  filter:brightness(0.4); /* You can try with filter to give darkness to each image */
-}
+
 .image-parent {
-  background-color: #E9E9E9;
+  background-color: $grey;
   max-width: 400px;
   min-height: 300px;
 }
@@ -26,26 +26,16 @@ h4{
 }
 
 .c-container {
-  background-color: #E9E9E9;
+  background-color: $grey;
   border-radius: 0.5rem;
   padding: 1.2rem 1.2rem;
   margin: 1rem 0rem;
 }
-.card:after {
-  content:"";
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.6);
-}
+
 .overlay-dark {
   background-color: rgba(black, 0.4);
 }
-.slide {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-}
+
 .overlay-grey {
   background-color: rgba(#596164, 0.4);
 }
