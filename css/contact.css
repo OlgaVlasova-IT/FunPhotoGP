@@ -27,7 +27,7 @@
    }
 
    @media (max-width: 768px) {
-    .contactSection{
+    #contactSection{
         display: flex;
         flex-direction: column;
       }

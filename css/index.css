@@ -43,10 +43,7 @@ Responsive Image gallery Style rules
     flex-direction: column;
     gap: 10px;
   }
-  .contactSection{
-    display: flex;
-    flex-direction: column;
-  }
+
   .image-item img {
     width: 100%;
     border-radius: 5px;
