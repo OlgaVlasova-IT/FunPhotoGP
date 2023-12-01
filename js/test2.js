@@ -1,81 +1,51 @@
-// var multipleCardCarousel = document.querySelector(
-//     "#carouselExampleControls"
-//   );
-//   if (window.matchMedia("(min-width: 768px)").matches) {
-//     var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-//       interval: false,
-//     });
-//     var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-//     var cardWidth = $(".carousel-item").width();
-//     var scrollPosition = 0;
-//     $("#carouselExampleControls .carousel-control-next").on("click", function () {
-//       if (scrollPosition < carouselWidth - cardWidth * 4) {
-//         scrollPosition += cardWidth;
-//         $("#carouselExampleControls .carousel-inner").animate(
-//           { scrollLeft: scrollPosition },
-//           600
-//         );
-//       }
-//     });
-//     $("#carouselExampleControls .carousel-control-prev").on("click", function () {
-//       if (scrollPosition > 0) {
-//         scrollPosition -= cardWidth;
-//         $("#carouselExampleControls .carousel-inner").animate(
-//           { scrollLeft: scrollPosition },
-//           600
-//         );
-//       }
-//     });
-//   } else {
-//     $(multipleCardCarousel).addClass("slide");
-//   }
+document.addEventListener('DOMContentLoaded', function () {
+    let multipleCardCarousel = document.querySelector("#carouselExampleControls");
+  
+  
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      let carousel = new bootstrap.Carousel(multipleCardCarousel, {
+        interval: false, // Disable automatic sliding
+        wrap: false, // Prevent wrapping at the end
+      });
+  
+      console.log(document.querySelector(".carousel-inner").scrollWidth)
+      let carouselWidth = document.querySelector(".carousel-inner").scrollWidth;
+      console.log(document.querySelector(".carousel-item").offsetWidth)
+      let cardWidth = document.querySelector(".carousel-item").offsetWidth;
+      let scrollPosition = 0;
+  
+  
+      document.querySelector("#carouselExampleControls .carousel-control-next").addEventListener("click", function () {
+          document.querySelector("#carouselExampleControls .carousel-control-prev").classList.remove("noDisplay")        
+  
+        if (scrollPosition >= carouselWidth - cardWidth * 4) {
+          // console.log("here")
+          // console.log(scrollPosition, carouselWidth );
+          document.querySelector("#carouselExampleControls .carousel-control-next").classList.add("noDisplay")
+        }
+          if (scrollPosition < carouselWidth - cardWidth * 4) {
+          scrollPosition += 2*cardWidth;
+          document.querySelector("#carouselExampleControls .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
+          }
 
-// let itemsA = document.querySelectorAll('.angels')
-// // console.log(itemsA)
-// itemsA.forEach((el) => {
-//     const minPerSlide = 4
-//     let next = el.nextElementSibling
-//     for (var i=1; i<minPerSlide; i++) {
-//         if (!next) {
-//             // wrap carousel by using first child
-//         	next = itemsA[0]
-//       	}
-//         let cloneChild = next.cloneNode(true)
-//         el.appendChild(cloneChild.children[0])
-//         next = next.nextElementSibling
-//     }
-// })
+      });
 
-// let itemsW = document.querySelectorAll('.witch')
-
-// itemsW.forEach((el) => {
-//     const minPerSlide = 4
-//     let next = el.nextElementSibling
-//     for (var i=1; i<minPerSlide; i++) {
-//         if (!next) {
-//             // wrap carousel by using first child
-//         	next = itemsW[0]
-//       	}
-//         let cloneChild = next.cloneNode(true)
-//         el.appendChild(cloneChild.children[0])
-//         next = next.nextElementSibling
-//     }
-// })
-
-
-// let itemsH = document.querySelectorAll('.halloween')
-
-// itemsH.forEach((el) => {
-//     const minPerSlide = 4
-//     let next = el.nextElementSibling
-//     for (var i=1; i<minPerSlide; i++) {
-//         if (!next) {
-//             // wrap carousel by using first child
-//         	next = itemsH[0]
-//       	}
-//         let cloneChild = next.cloneNode(true)
-//         el.appendChild(cloneChild.children[0])
-//         next = next.nextElementSibling
-//     }
-// })
-
+      document.querySelector("#carouselExampleControls .carousel-control-prev").addEventListener("click", function () {
+        //  console.log("here")
+        //   console.log(scrollPosition, carouselWidth );
+      document.querySelector("#carouselExampleControls .carousel-control-next").classList.remove("noDisplay")
+      if (scrollPosition <= cardWidth) {
+          document.querySelector("#carouselExampleControls .carousel-control-prev").classList.add("noDisplay")
+         
+        }
+        if (scrollPosition > 0 ){
+          scrollPosition -= cardWidth;
+          document.querySelector("#carouselExampleControls .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
+        }
+      });
+    } else {
+      multipleCardCarousel.classList.add("slide");
+    }
+  });
+  
+  
