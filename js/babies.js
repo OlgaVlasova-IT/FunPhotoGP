@@ -20,15 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector("#carouselExampleControls .carousel-control-prev").classList.remove("noDisplay")        
 
       if (scrollPosition > carouselWidth - cardWidth * 3) {
-        // console.log("here")
-        // console.log(scrollPosition, carouselWidth );
         document.querySelector("#carouselExampleControls .carousel-control-next").classList.add("noDisplay")
       }
       else {
         document.querySelector("#carouselExampleControls .carousel-control-next").classList.add("display")
-
       }
-
         if (scrollPosition < carouselWidth - cardWidth * 2) {
         scrollPosition += cardWidth;
         document.querySelector("#carouselExampleControls .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
@@ -38,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     document.querySelector("#carouselExampleControls .carousel-control-prev").addEventListener("click", function () {
-       console.log("here")
-        console.log(scrollPosition, carouselWidth );
     document.querySelector("#carouselExampleControls .carousel-control-next").classList.remove("noDisplay")
     if (scrollPosition <= cardWidth) {
         document.querySelector("#carouselExampleControls .carousel-control-prev").classList.add("noDisplay")
