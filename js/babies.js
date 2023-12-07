@@ -9,9 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
       wrap: false, // Prevent wrapping at the end
     });
 
-    console.log(document.querySelector(".carousel-inner").scrollWidth)
     let carouselWidth = document.querySelector(".carousel-inner").scrollWidth;
-    console.log(document.querySelector(".carousel-item").offsetWidth)
+  
     let cardWidth = document.querySelector(".carousel-item").offsetWidth;
     let scrollPosition = 0;
 

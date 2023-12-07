@@ -79,7 +79,9 @@
       align-items: center;
       height: 17em;
     }
-  
+    .nodisplay {
+      display: none;
+    }
   .one .two .three .four .five .six{
     height: 17em;
     width: 90vw;

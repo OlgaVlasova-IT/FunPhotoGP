@@ -4,7 +4,7 @@
 
   .one{
     height: 50vh;
-    width: 33.33vh;
+    width: 33.3vh;
   }
   .two{
     height: 50vh;
@@ -84,6 +84,10 @@
     height: 17em;
     width: 90vw;
   }
+
+  .nodisplay {
+    display: none;
+  }
   }
 
   .third-of-width {
@@ -96,7 +100,9 @@
     .third-of-width{
       width: 100%
     }}
-
+    .nodisplay {
+      display: none;
+    }
 /* overlay*/
     .image-item {
       position: relative;
