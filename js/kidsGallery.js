@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else {
           document.querySelector("#carouselExampleControls .carousel-control-next").classList.add("display")
         }
-          if (scrollPosition < carouselWidth - cardWidth * 4) {
+          if (scrollPosition < carouselWidth - cardWidth * 2) {
           scrollPosition += cardWidth;
           document.querySelector("#carouselExampleControls .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
           }
