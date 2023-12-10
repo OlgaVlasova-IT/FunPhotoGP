@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Playfair Display', serif; */
+}
 .carousel-inner {
     padding: 1em;
   }
@@ -63,7 +67,6 @@
       justify-content: center;
       align-items: center;
   }
-
 
   .carousel-control-prev{
     display: ;

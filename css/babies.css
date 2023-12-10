@@ -1,3 +1,8 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Playfair Display', serif; */
+}
+
 .carousel-inner {
     padding: 1em;
   }
