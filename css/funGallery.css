@@ -70,13 +70,9 @@ body {
       justify-content: center;
       align-items: center;
   }
-  /* .card img {
-      max-height: 100%;
-  } */
 
-  .carousel-control-prev{
-    display: ;
-  }
+
+ 
   @media screen and (max-width: 767px) {
     .card .img-wrapper .carousel-inner {
       display: flex;
@@ -109,16 +105,41 @@ body {
       display: none;
     }}
 /* overlay*/
-    .image-item {
-      position: relative;
-      cursor: pointer;
-    }
-    .image-wrap {
-      position: relative;
-      cursor: pointer;
-    }
-    .photoIcon {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
+.image-item {
+  position: relative;
+  cursor: pointer;
+}
+.image-wrap {
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  /* center overlay content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.image-wrap:hover .overlay {
+  transform: scale(1);
+}
+.image-item:hover .overlay {
+  transform: scale(1);
+}
+
+.photoIcon {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
