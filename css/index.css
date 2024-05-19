@@ -57,7 +57,29 @@ Responsive Image gallery Style rules
   #photoMe {
     /* height:60%;
     width: auto; */
-    border-radius: 50px;
+    /* border-radius: 50px; */
+  }
+  #contactLeft {
+    background: url(/icons/watercolor\ stain2.png); 
+    background-size: contain; 
+    background-position: start center; 
+     background-repeat:no-repeat; 
+  }
+  #exampleFormControlInput1 , #exampleFormControlInput2 {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(149, 148, 148);
+    color:whitesmoke;
+  }
+ 
+  
+  #exampleFormControlTextarea1{
+    background-color: transparent;
+    border: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(149, 148, 148);
+    color: whitesmoke;
   }
   
   @media only screen and (min-width: 768px) {
@@ -156,7 +178,9 @@ Responsive Image gallery Style rules
     width:100%;
     height: auto;
   }
-
+  #contactLeft {
+    background: none;
+  }
 }
 
 

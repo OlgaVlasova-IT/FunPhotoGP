@@ -69,6 +69,30 @@ body {
  border-radius: 1em;
    }
 
+   #exampleFormControlInput1 , #exampleFormControlInput2 {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(149, 148, 148);
+    color:whitesmoke;
+  }
+ 
+  
+  #exampleFormControlTextarea1{
+    background-color: transparent;
+    border: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(149, 148, 148);
+    color: whitesmoke;
+  }
+
+  #contactLeft {
+    background: url(/icons/watercolor\ stain2.png); 
+    background-size: contain; 
+    background-position: start center; 
+     background-repeat:no-repeat; 
+  }
+
    @media (max-width: 768px) {
     #contactSection{
         display: flex;
@@ -86,6 +110,9 @@ body {
       width:100%;
       height: auto;
       
+    }
+    #contactLeft {
+      background: none;
     }
   
   }

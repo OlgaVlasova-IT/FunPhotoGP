@@ -16,13 +16,13 @@
   </head>
   <body >
 
-    <nav class="navbar navbar-expand-sm navbar-light fw-bolder sticky-top fs-4  p-0 " style="background-color: #FFFFFF; color:#202020;" id="top">
-      <div class="container p-0 d-flex justify-content-around ">
-        <a class="navbar-brand mx-6" href="index.html"><img src="/icons/logo brush stain less opacity.png" alt="logo" width="80px" height="80px"></a>
+    <nav class="navbar navbar-expand-sm navbar-light fw-bolder sticky-top fs-5  p-6 " style="background-color: #FFFFFF; color:#202020;" id="top">
+      <div class="container d-flex justify-content-between py-2 px-2 " style="border-bottom: 1px lightgrey solid;">
+        <a class="navbar-brand mx-6" href="index.html"><img src="/icons/FUN(1).png" alt="logo" width="80px" height="80px" style="border-radius: 30px; opacity: 0.8"></a>
         <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class=" collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class=" collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
           <a class="nav-link px-3" aria-current="page" href="index.html" style=" color:#202020">Home</a>
@@ -39,9 +39,9 @@
                 <li><a class="dropdown-item px-3" href="funGallery.html">Fun Photo Projects<a></li>
             </ul>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link px-3" href="aboutMe.html" style=" color:#202020">About Me</a>
-            </li> 
+            </li>  -->
           <li class="nav-item">
           <a class="nav-link px-3" href="contact.html" style=" color:#202020" >Contact Me</a>
           </li>
@@ -50,7 +50,8 @@
       </div>
       </nav>
 
-
+      <section class=" container border-bottom">
+        <h1 class="text-center py-3 mt-5 mb-2">BABIES GALLERY</h1>
       <div id="carouselExampleControls" class="carousel">
         <div class="carousel-inner">
      
@@ -99,9 +100,10 @@
             <span class="visually-hidden bg-dark">Next</span>
         </button>
     </div>
+    </section>
 
     <!-- <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 " style="background-color: #463030;"> -->
-      <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 " style="background: url(/icons/294376\ opacity\ 60.png); background-size: contain ; background-position: center center;  background-repeat:no-repeat;">
+      <!-- <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100 " style="background: url(/icons/294376\ opacity\ 60.png); background-size: contain ; background-position: center center;  background-repeat:no-repeat;">
         <h1 class=" mt-5 display-4"> Contact Me</h1>
         <h5 class="align-left my-4" >Let's make some memories together!</h5>
        <form class="d-flex flex-column justify-content-center align-items-center third-of-width"
@@ -126,9 +128,61 @@
             </div>
               </form>
  
-     </div> 
+     </div>  -->
+
+
+
+
+     <div class="container  px-0 mb-5 pb-5  border-bottom " id="contact"> 
+      <div class="container-fluid  d-flex justify-content-center  py-6  px-2" >
+      <h1 class=" text-center   py-3 mt-5 mb-2">CONTACT ME</h1>
+    </div>
+  
+       <div class="row"> 
+          <div class="container-fluid d-flex flex-column justify-content-between align-items-between  col-lg-6 py-5  mx-0 vh-20" id="contactLeft"
+>
+              <!-- <div class=" container-fluid d-flex flex-column justify-content-between align-items-between px-2"> -->
+                <div>
+                <h4 class="align-left my-2" >Let's make some memories together!</h4>
+                <h6 class="align-left my-2">Serving Grande Prairie, Alberta and area</h6>
+              </div>
+                <div class=" container-fluid flex-column justify-content-between align-items-between px-0">
+                <h5 class="align-left my-2">funphotogp@gmail.com</h5>
+                <div class="pt-4">
+                <a class="pe-5" href="https://www.instagram.com/funphotogp?igsh=MTUybnZjeG01aDE5ZA==" ><span><img src="icons/instagram.svg" alt="instagram Logo" width="30px" height="30px"></span></a>
+                <a  class="px-5" href="https://www.tiktok.com/@funphotogp?_t=8hJdx96SICs&_r=1" ><span><img src="icons/tiktok.svg" alt="TikToklogo" width="30px" height="30px"></span></a>
+                <a  class="px-5" href="https://www.facebook.com/profile.php?id=61552006494951&mibextid=ZbWKwL"><span><img src="icons/facebook-f.svg" alt="facebooklogo" width="" height="30"></span></a>
+              </div>
+              </div>
+              <!-- </div> -->
+          </div>
+          <div class="col-md-12 col-lg-6 py-5  mx-0 vh-20"
+          > 
+            
+            <form class="d-flex flex-column justify-content-center align-items-center "
+            action="https://formspree.io/f/xbjveygv" method="POST">
+      <div class="container-fluid" >
+                <div class="mb-3 inline-photo show-on-scroll ">
+                  <label style="  color:black; " for="exampleFormControlInput1" class="form-label fs-6 my-1">Email <span style="color: red">*</span></label>
+                  <input type="email" class="form-control px-0 " id="exampleFormControlInput1" placeholder="Email" name="email" required  >
+                  <label style=" color:black" for="exampleFormControlInput1" class="form-label fs-6 my-1" >Name <span style="color: red">*</span></label>
+                  <input    type="text" class="form-control px-0  " id="exampleFormControlInput1" placeholder="Your name" name="name" required>
+                </div>
+                <div class="mb-3 inline-photo show-on-scroll ">
+                  <label style=" color: black" for="exampleFormControlTextarea1" class="form-label fs-6 my-1">How can I help you?<span style="color: red">*</span></label>
+                  <textarea class="form-control px-0 " id="exampleFormControlTextarea1" rows="4" name="message" required placeholder="Enter your message"></textarea>
+                 
+                </div>
+                <div class="modal-footer d-flex justify-content-end alig-items-end inline-photo show-on-scroll px-0 py-0">
+                  <button class="btn btn-lg mt-3 px-3 " type="submit" id="submitForm" style=" border-radius: 0px; border-color: rgb(149, 148, 148)" >Send</button>
+                </div>
+              </div>
+                </form>
+           </div> 
+      </div>
+  </div>
       <!--Follow me-->
-      <div class="container-fluid mt-5 ">
+      <div class="container mt-5 ">
         <!-- <h1 class="text-center my-5 p-3" style="font-family: 'Indie Flower', cursive; "> Follow Me</h1> -->
         <h1 class="text-center my-5 p-3"><a href="https://www.facebook.com/profile.php?id=61552006494951&mibextid=ZbWKwL" style="text-decoration: none; color:  black"> Follow me: </a></h1>
          <div class="row my-5 ">
